@@ -1,7 +1,7 @@
 require_relative "../config/environment.rb"
 require 'active_support/inflector'
 
-attr_accessor :id
+attr_reader :id
 
 class InteractiveRecord
   def initialize(options = {})
