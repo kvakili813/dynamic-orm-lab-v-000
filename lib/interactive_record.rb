@@ -4,7 +4,7 @@ require 'active_support/inflector'
 
 class InteractiveRecord
 
-  attr_accessor :id
+  attr_accessor :id, :name
 
   def initialize(options = {})
     options.each {|property, value| self.send("#{property}=", value)}
